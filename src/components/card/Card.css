@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&display=swap");
+:root {
+  --primaryColour: #006064;
+  --secondaryColour: #FFFFFF;
+  --thirdColour: #000000;
+  --detailingColor: #428E92;
+  --fontFamily: "Playfair Display", serif;
+  /* --- Font Informations Per Component --- */
+  /* --- Navbar --- */
+  --fontSizeNavbarLogo: 16px;
+  --fontSizeNavbarLinks: 12px;
+  --fontWeightNavbarLogo: 500;
+  --fontWeightNavbarLinks: 400;
+  /* --- TextSection --- */
+  --fontSizeTextSectionTitle: 24px;
+  --fontSizeTextSectionParagraph: 16px;
+  --fontWeightTextSectionTitle: 500;
+  --fontWeightTextSectionParagraph: 400;
+  --lineHeightTextSectionTitle: 32px;
+  --lineHeightTextSectionParagraph: 24px;
+  /* --- InfoSection --- */
+  --fontSizeInfoSectionTitle: 24px;
+  --fontSizeInfoSectionParagraph: 16px;
+  --fontWeightInfoSectionTitle: 500;
+  --fontWeightInfoSectionParagraph: 400;
+  --lineHeightInfoSectionTitle: 32px;
+  --lineHeightInfoSectionParagraph: 24px;
+  /* --- Footer --- */
+  --fontSizeFooterButton: 12px;
+  --fontSizeFooterInput: 12px;
+  --fontSizeFooterTitle: 24px;
+  --fontSizeFooterParagraph: 12px;
+  --fontWeightFooterButton: 400;
+  --fontWeightFooterInput: 400;
+  --fontWeightFooterTitle: 500;
+  --fontWeightFooterParagraph: 400;
+}
+
+.card {
+  cursor: pointer;
+  display: grid;
+  row-gap: 32px;
+  width: 400px;
+}
+.card h3 {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: var(--fontFamily);
+  font-size: var(--fontSizeTitles);
+  font-weight: var(--fontWeightTitles);
+  text-align: center;
+}
+.card img {
+  border-radius: 4px;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+  width: 400px;
+  transition: all ease-in-out 0.2s;
+}
+.card img:hover {
+  box-shadow: 0px 0px 8px var(--primaryColour);
+  transform: scale(1.01);
+}
+.card p {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: var(--fontFamily);
+  font-size: var(--fontSizeParagraphs);
+  font-weight: var(--fontWeightParagraphs);
+  margin-bottom: 2px;
+  text-align: center;
+}
+.card p:last-child {
+  color: var(--detailingColor);
+  font-style: italic;
+  font-weight: var(--fontWeightTitles);
+  text-align: start;
+}
+.card p:last-child:hover {
+  color: var(--primaryColour);
+  border-bottom: solid var(--primaryColour) 2px;
+  margin-bottom: 0px;
+}/*# sourceMappingURL=Card.css.map */

@@ -1,0 +1,57 @@
+@import '../abstrats.scss';
+
+footer{
+    @include displayGridInColumn;
+    background-color: var(--primaryColour);
+    justify-content: center;
+    padding: 64px;
+    row-gap: 64px;
+    p{
+        @include noSelection;
+        color: var(--secondaryColour);
+        font-family: var(--fontFamily);
+        font-size: var(--fontSizeFooterParagraph);
+        font-style: italic;
+        font-weight: var(--fontWeightFooterParagraph);
+        text-align: center;
+    }
+    .newsletter{
+        @include displayGridInLine;
+        justify-content: center;
+        h2{
+            @include noSelection;
+            font-family: var(--fontFamily);
+            font-size: var(--fontSizeFooterTitle);
+            font-weight: var(--fontWeightFooterTitle);
+            text-align: center;
+        }
+        .inputAndButton{
+            display: grid;
+            grid-auto-flow: column;
+            column-gap: 2px;
+            input{
+                @include noSelection;
+                height: 56px;
+                outline: none;
+                padding: 0px 16px;
+                &::placeholder{
+                    color: rgba(0, 0, 0, 0.5);
+                    font-family: var(--fontFamily);
+                    font-size: var(--fontSizeFooterInput);
+                    font-style: italic;
+                    font-weight: var(--fontWeightFooterInput);
+                }
+            }
+            button{
+                @include noSelection;
+                background-color: var(--thirdColour);
+                color: var(--secondaryColour);
+                font-family: var(--fontFamily);
+                font-size: var(--fontSizeFooterButton);
+                font-weight: var(--fontWeightFooterButton);
+                height: 56px;
+                padding: 0px 16px;
+            }
+        }
+    }
+}

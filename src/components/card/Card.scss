@@ -1,0 +1,46 @@
+@import '../abstrats.scss';
+
+.card{
+    cursor: pointer;
+    display: grid;
+    row-gap: 32px;
+    width: 400px;
+    h3{
+        @include noSelection;
+        font-family: var(--fontFamily);
+        font-size: var(--fontSizeTitles);
+        font-weight: var(--fontWeightTitles);
+        text-align: center;
+    }
+    img{
+        border-radius: 4px;
+        height: 400px;
+        object-fit: cover;
+        object-position: center center;
+        width: 400px;
+        transition: all ease-in-out 0.2s;
+        &:hover{
+            box-shadow: 0px 0px 8px var(--primaryColour);
+            transform: scale(1.01);
+        }
+    }
+    p{
+        @include noSelection;
+        font-family: var(--fontFamily);
+        font-size: var(--fontSizeParagraphs);
+        font-weight: var(--fontWeightParagraphs);
+        margin-bottom: 2px;
+        text-align: center;
+        &:last-child{
+            color: var(--detailingColor);
+            font-style: italic;
+            font-weight: var(--fontWeightTitles);
+            text-align: start;
+            &:hover{
+                color: var(--primaryColour);
+                border-bottom: solid var(--primaryColour) 2px;
+                margin-bottom: 0px;
+            }
+        }
+    }
+}

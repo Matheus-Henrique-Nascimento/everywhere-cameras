@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&display=swap");
+:root {
+  --primaryColour: #006064;
+  --secondaryColour: #FFFFFF;
+  --thirdColour: #000000;
+  --detailingColor: #428E92;
+  --fontFamily: "Playfair Display", serif;
+  /* --- Font Informations Per Component --- */
+  /* --- Navbar --- */
+  --fontSizeNavbarLogo: 16px;
+  --fontSizeNavbarLinks: 12px;
+  --fontWeightNavbarLogo: 500;
+  --fontWeightNavbarLinks: 400;
+  /* --- TextSection --- */
+  --fontSizeTextSectionTitle: 24px;
+  --fontSizeTextSectionParagraph: 16px;
+  --fontWeightTextSectionTitle: 500;
+  --fontWeightTextSectionParagraph: 400;
+  --lineHeightTextSectionTitle: 32px;
+  --lineHeightTextSectionParagraph: 24px;
+  /* --- InfoSection --- */
+  --fontSizeInfoSectionTitle: 24px;
+  --fontSizeInfoSectionParagraph: 16px;
+  --fontWeightInfoSectionTitle: 500;
+  --fontWeightInfoSectionParagraph: 400;
+  --lineHeightInfoSectionTitle: 32px;
+  --lineHeightInfoSectionParagraph: 24px;
+  /* --- Footer --- */
+  --fontSizeFooterButton: 12px;
+  --fontSizeFooterInput: 12px;
+  --fontSizeFooterTitle: 24px;
+  --fontSizeFooterParagraph: 12px;
+  --fontWeightFooterButton: 400;
+  --fontWeightFooterInput: 400;
+  --fontWeightFooterTitle: 500;
+  --fontWeightFooterParagraph: 400;
+}
+
+main .infoSection {
+  align-items: center;
+  -moz-column-gap: 32px;
+       column-gap: 32px;
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-between;
+  height: 100vh;
+  padding: 64px;
+}
+main .infoSection img {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  height: 360px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+  width: 360px;
+  -webkit-animation: diagonalMoviment 2s infinite;
+          animation: diagonalMoviment 2s infinite;
+}
+@-webkit-keyframes diagonalMoviment {
+  0%, 100% {
+    transform: rotate(15deg);
+  }
+  50% {
+    transform: rotate(-15deg);
+  }
+}
+@keyframes diagonalMoviment {
+  0%, 100% {
+    transform: rotate(15deg);
+  }
+  50% {
+    transform: rotate(-15deg);
+  }
+}
+main .infoSection .text {
+  display: grid;
+  row-gap: 32px;
+}
+main .infoSection .text h2 {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: var(--fontFamily);
+  font-size: var(--fontSizeInfoSectionTitle);
+  font-weight: var(--fontWeightInfoSectionTitle);
+  line-height: var(--lineHeightInfoSectionTitle);
+  text-align: center;
+}
+main .infoSection .text .paragraphs {
+  display: grid;
+  row-gap: 16px;
+}
+main .infoSection .text .paragraphs p {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: var(--fontFamily);
+  font-size: var(--fontSizeInfoSectionParagraph);
+  font-weight: var(--fontWeightInfoSectionParagraph);
+  line-height: var(--lineHeightInfoSectionParagraph);
+  text-align: center;
+}
+main .infoSection .text .paragraphs p:nth-last-child(-n+2) {
+  -webkit-touch-callout: initial;
+  -webkit-user-select: initial;
+  -moz-user-select: initial;
+  -ms-user-select: initial;
+  user-select: initial;
+  color: var(--detailingColor);
+  font-style: italic;
+}/*# sourceMappingURL=InfoSection.css.map */

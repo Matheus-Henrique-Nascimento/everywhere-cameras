@@ -1,0 +1,12 @@
+@import '../abstrats.scss';
+
+main{
+    .videoSection{
+        video{
+            height: 100vh;
+            object-fit: fill;
+            object-position: center center;
+            width: 100%;
+        }
+    }
+}
