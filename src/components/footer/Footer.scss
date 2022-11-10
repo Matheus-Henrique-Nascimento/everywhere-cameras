@@ -46,6 +46,7 @@ footer{
                 @include noSelection;
                 background-color: var(--thirdColour);
                 color: var(--secondaryColour);
+                cursor: pointer;
                 font-family: var(--fontFamily);
                 font-size: var(--fontSizeFooterButton);
                 font-weight: var(--fontWeightFooterButton);

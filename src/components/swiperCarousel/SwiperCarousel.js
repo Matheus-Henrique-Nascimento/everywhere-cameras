@@ -22,7 +22,7 @@ export default function SwiperCarousel(props){
             <h2>{props.title}</h2>
             <Swiper
                 slidesPerView={3}
-                spaceBetween={30}
+                spaceBetween={64}
                 slidesPerGroup={3}
                 loop={true}
                 loopFillGroupWithBlank={true}

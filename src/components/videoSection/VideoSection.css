@@ -34,6 +34,7 @@
   --fontWeightCardTitle: 500;
   --fontWeightCardParagraph: 400;
   --fontWeightCardLastParagraph: 500;
+  --lineHeightCardParagraph: normal;
   /* --- Footer --- */
   --fontSizeFooterButton: 12px;
   --fontSizeFooterInput: 12px;
@@ -47,8 +48,8 @@
 
 main .videoSection video {
   height: 100vh;
-  -o-object-fit: fill;
-     object-fit: fill;
+  -o-object-fit: cover;
+     object-fit: cover;
   -o-object-position: center center;
      object-position: center center;
   width: 100%;

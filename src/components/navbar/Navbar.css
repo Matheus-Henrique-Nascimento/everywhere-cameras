@@ -34,6 +34,7 @@
   --fontWeightCardTitle: 500;
   --fontWeightCardParagraph: 400;
   --fontWeightCardLastParagraph: 500;
+  --lineHeightCardParagraph: normal;
   /* --- Footer --- */
   --fontSizeFooterButton: 12px;
   --fontSizeFooterInput: 12px;

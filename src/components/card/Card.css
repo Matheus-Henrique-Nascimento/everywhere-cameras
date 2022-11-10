@@ -34,6 +34,7 @@
   --fontWeightCardTitle: 500;
   --fontWeightCardParagraph: 400;
   --fontWeightCardLastParagraph: 500;
+  --lineHeightCardParagraph: normal;
   /* --- Footer --- */
   --fontSizeFooterButton: 12px;
   --fontSizeFooterInput: 12px;
@@ -49,7 +50,7 @@
   cursor: pointer;
   display: grid;
   row-gap: 32px;
-  width: 400px;
+  width: 368px;
 }
 .card h3 {
   -webkit-touch-callout: none;
@@ -64,12 +65,12 @@
 }
 .card img {
   border-radius: 4px;
-  height: 400px;
+  height: 368px;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center center;
      object-position: center center;
-  width: 400px;
+  width: 368px;
   transition: all ease-in-out 0.2s;
 }
 .card img:hover {
@@ -82,11 +83,17 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  display: -webkit-box;
   font-family: var(--fontFamily);
   font-size: var(--fontSizeCardParagraph);
   font-weight: var(--fontWeightCardParagraph);
+  height: var(--lineHeightCardParagraph);
+  line-height: var(--lineHeightCardParagraph);
   margin-bottom: 2px;
+  overflow: hidden;
   text-align: center;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 .card p:last-child {
   color: var(--detailingColor);

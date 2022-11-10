@@ -34,6 +34,7 @@
   --fontWeightCardTitle: 500;
   --fontWeightCardParagraph: 400;
   --fontWeightCardLastParagraph: 500;
+  --lineHeightCardParagraph: normal;
   /* --- Footer --- */
   --fontSizeFooterButton: 12px;
   --fontSizeFooterInput: 12px;
@@ -135,6 +136,7 @@ footer .newsletter .inputAndButton button {
   user-select: none;
   background-color: var(--thirdColour);
   color: var(--secondaryColour);
+  cursor: pointer;
   font-family: var(--fontFamily);
   font-size: var(--fontSizeFooterButton);
   font-weight: var(--fontWeightFooterButton);

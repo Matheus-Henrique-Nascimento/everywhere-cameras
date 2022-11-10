@@ -4,7 +4,7 @@
     cursor: pointer;
     display: grid;
     row-gap: 32px;
-    width: 400px;
+    width: 368px;
     h3{
         @include noSelection;
         font-family: var(--fontFamily);
@@ -14,10 +14,10 @@
     }
     img{
         border-radius: 4px;
-        height: 400px;
+        height: 368px;
         object-fit: cover;
         object-position: center center;
-        width: 400px;
+        width: 368px;
         transition: all ease-in-out 0.2s;
         &:hover{
             box-shadow: 0px 0px 8px var(--primaryColour);
@@ -26,11 +26,17 @@
     }
     p{
         @include noSelection;
+        display: -webkit-box;
         font-family: var(--fontFamily);
         font-size: var(--fontSizeCardParagraph);
         font-weight: var(--fontWeightCardParagraph);
+        height: var(--lineHeightCardParagraph);
+        line-height: var(--lineHeightCardParagraph);
         margin-bottom: 2px;
+        overflow: hidden;
         text-align: center;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
         &:last-child{
             color: var(--detailingColor);
             font-style: italic;

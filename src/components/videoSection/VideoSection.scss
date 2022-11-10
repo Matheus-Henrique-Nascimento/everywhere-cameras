@@ -4,7 +4,7 @@ main{
     .videoSection{
         video{
             height: 100vh;
-            object-fit: fill;
+            object-fit: cover;
             object-position: center center;
             width: 100%;
         }
