@@ -25,6 +25,15 @@
   --fontWeightInfoSectionParagraph: 400;
   --lineHeightInfoSectionTitle: 32px;
   --lineHeightInfoSectionParagraph: 24px;
+  /* --- Swiper Carousel --- */
+  --fontSizeCarousel: 24px;
+  --fontWeightCarousel: 500;
+  /* --- Card --- */
+  --fontSizeCardTitle: 20px;
+  --fontSizeCardParagraph: 16px;
+  --fontWeightCardTitle: 500;
+  --fontWeightCardParagraph: 400;
+  --fontWeightCardLastParagraph: 500;
   /* --- Footer --- */
   --fontSizeFooterButton: 12px;
   --fontSizeFooterInput: 12px;
@@ -49,8 +58,8 @@
   -ms-user-select: none;
   user-select: none;
   font-family: var(--fontFamily);
-  font-size: var(--fontSizeTitles);
-  font-weight: var(--fontWeightTitles);
+  font-size: var(--fontSizeCardTitle);
+  font-weight: var(--fontWeightCardTitle);
   text-align: center;
 }
 .card img {
@@ -74,15 +83,15 @@
   -ms-user-select: none;
   user-select: none;
   font-family: var(--fontFamily);
-  font-size: var(--fontSizeParagraphs);
-  font-weight: var(--fontWeightParagraphs);
+  font-size: var(--fontSizeCardParagraph);
+  font-weight: var(--fontWeightCardParagraph);
   margin-bottom: 2px;
   text-align: center;
 }
 .card p:last-child {
   color: var(--detailingColor);
   font-style: italic;
-  font-weight: var(--fontWeightTitles);
+  font-weight: var(--fontWeightCardLastParagraph);
   text-align: start;
 }
 .card p:last-child:hover {

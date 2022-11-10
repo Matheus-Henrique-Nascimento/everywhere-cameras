@@ -1,0 +1,12 @@
+@import '../abstrats.scss';
+
+.swiperCarousel{
+    padding: 64px;
+    h2{
+        @include noSelection;
+        font-family: var(--fontFamily);
+        font-size: var(--fontSizeCarousel);
+        font-weight: var(--fontWeightCarousel);
+        text-align: center;
+    }
+}

@@ -8,8 +8,8 @@
     h3{
         @include noSelection;
         font-family: var(--fontFamily);
-        font-size: var(--fontSizeTitles);
-        font-weight: var(--fontWeightTitles);
+        font-size: var(--fontSizeCardTitle);
+        font-weight: var(--fontWeightCardTitle);
         text-align: center;
     }
     img{
@@ -27,14 +27,14 @@
     p{
         @include noSelection;
         font-family: var(--fontFamily);
-        font-size: var(--fontSizeParagraphs);
-        font-weight: var(--fontWeightParagraphs);
+        font-size: var(--fontSizeCardParagraph);
+        font-weight: var(--fontWeightCardParagraph);
         margin-bottom: 2px;
         text-align: center;
         &:last-child{
             color: var(--detailingColor);
             font-style: italic;
-            font-weight: var(--fontWeightTitles);
+            font-weight: var(--fontWeightCardLastParagraph);
             text-align: start;
             &:hover{
                 color: var(--primaryColour);

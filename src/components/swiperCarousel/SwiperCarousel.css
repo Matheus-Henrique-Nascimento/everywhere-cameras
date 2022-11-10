@@ -45,72 +45,17 @@
   --fontWeightFooterParagraph: 400;
 }
 
-main .textSection {
-  align-items: center;
-  -moz-column-gap: 32px;
-       column-gap: 32px;
-  display: grid;
-  grid-auto-flow: column;
-  justify-content: space-between;
-  height: calc(100vh - 100px);
+.swiperCarousel {
   padding: 64px;
 }
-main .textSection img {
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  height: 360px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center center;
-     object-position: center center;
-  width: 360px;
-  -webkit-animation: diagonalMoviment 2s infinite;
-          animation: diagonalMoviment 2s infinite;
-}
-@-webkit-keyframes diagonalMoviment {
-  0%, 100% {
-    transform: rotate(15deg);
-  }
-  50% {
-    transform: rotate(-15deg);
-  }
-}
-@keyframes diagonalMoviment {
-  0%, 100% {
-    transform: rotate(15deg);
-  }
-  50% {
-    transform: rotate(-15deg);
-  }
-}
-main .textSection .text {
-  display: grid;
-  row-gap: 32px;
-}
-main .textSection .text h2 {
+.swiperCarousel h2 {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
   font-family: var(--fontFamily);
-  font-size: var(--fontSizeTextSectionTitle);
-  font-weight: var(--fontWeightTextSectionTitle);
-  line-height: var(--lineHeightTextSectionTitle);
+  font-size: var(--fontSizeCarousel);
+  font-weight: var(--fontWeightCarousel);
   text-align: center;
-}
-main .textSection .text p {
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  font-family: var(--fontFamily);
-  font-size: var(--fontSizeTextSectionParagraph);
-  font-weight: var(--fontWeightTextSectionParagraph);
-  line-height: var(--lineHeightTextSectionParagraph);
-  text-align: center;
-}/*# sourceMappingURL=TextSection.css.map */
+}/*# sourceMappingURL=SwiperCarousel.css.map */
