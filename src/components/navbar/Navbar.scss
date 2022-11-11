@@ -5,20 +5,30 @@ header{
         @include displayGridInLine();
         background-color: var(--primaryColour);
         height: 100px;
+        opacity: 0.9;
+        padding: 0px 64px;
+        position: fixed;
+        width: 100%;
+        z-index: 1000;
         h1{
             @include noSelection;
             color: var(--secondaryColour);
+            cursor: pointer;
             font-family: var(--fontFamily);
             font-size: var(--fontSizeNavbarLogo);
             font-weight: var(--fontWeightNavbarLogo);
-            padding: 0px 0px 0px 64px;
+            padding: 8px;
+            &:hover{
+                background-color: var(--detailingColor);
+                transition: all ease 0.2s;
+            }
         }
         ul{
             @include displayGridInLine();
-            padding: 0px 64px 0px 0px;
             li{a{
                     @include noSelection;
                     color: var(--secondaryColour);
+                    cursor: pointer;
                     font-family: var(--fontFamily);
                     font-size: var(--fontSizeNavbarLinks);
                     font-weight: var(--fontWeightNavbarLinks);

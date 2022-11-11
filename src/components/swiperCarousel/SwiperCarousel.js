@@ -19,7 +19,7 @@ export default function SwiperCarousel(props){
     return(
         
         <div className='swiperCarousel'>
-            <h2>{props.title}</h2>
+            <h2 id={props.id}>{props.title}</h2>
             <Swiper
                 slidesPerView={3}
                 spaceBetween={64}

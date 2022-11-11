@@ -1,7 +1,7 @@
 @import '../abstrats.scss';
 
 main{
-    .infoSection{
+    #infoSection{
         @include displayGridInLine;
         height: 100vh;
         padding: 64px;

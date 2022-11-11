@@ -3,7 +3,7 @@
 main{
     .textSection{
         @include displayGridInLine;
-        height: calc(100vh - 100px);
+        height: 100vh;
         padding: 64px;
         img{
             @include noSelection;

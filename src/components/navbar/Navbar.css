@@ -55,6 +55,11 @@ header nav {
   justify-content: space-between;
   background-color: var(--primaryColour);
   height: 100px;
+  opacity: 0.9;
+  padding: 0px 64px;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
 }
 header nav h1 {
   -webkit-touch-callout: none;
@@ -63,10 +68,15 @@ header nav h1 {
   -ms-user-select: none;
   user-select: none;
   color: var(--secondaryColour);
+  cursor: pointer;
   font-family: var(--fontFamily);
   font-size: var(--fontSizeNavbarLogo);
   font-weight: var(--fontWeightNavbarLogo);
-  padding: 0px 0px 0px 64px;
+  padding: 8px;
+}
+header nav h1:hover {
+  background-color: var(--detailingColor);
+  transition: all ease 0.2s;
 }
 header nav ul {
   align-items: center;
@@ -75,7 +85,6 @@ header nav ul {
   display: grid;
   grid-auto-flow: column;
   justify-content: space-between;
-  padding: 0px 64px 0px 0px;
 }
 header nav ul li a {
   -webkit-touch-callout: none;
@@ -84,6 +93,7 @@ header nav ul li a {
   -ms-user-select: none;
   user-select: none;
   color: var(--secondaryColour);
+  cursor: pointer;
   font-family: var(--fontFamily);
   font-size: var(--fontSizeNavbarLinks);
   font-weight: var(--fontWeightNavbarLinks);

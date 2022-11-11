@@ -4,7 +4,7 @@ import './InfoSection.css';
 export default function TextSection(props){
     return(
         <main>
-            <section className='infoSection'>
+            <section id='infoSection'>
                 <img src={props.firstPhoto} alt='Ilustrações coloridas referentes a câmeras.'/>
                 <section className='text'>
                     <h2>{props.title}</h2>
