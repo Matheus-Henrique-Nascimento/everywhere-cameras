@@ -17,8 +17,7 @@ import "swiper/css/navigation";
 
 export default function SwiperCarousel(props){
     return(
-        
-        <div className='swiperCarousel'>
+        <section className='swiperCarousel'>
             <h2 id={props.id}>{props.title}</h2>
             <Swiper
                 slidesPerView={3}
@@ -43,6 +42,6 @@ export default function SwiperCarousel(props){
                 <SwiperSlide><Card title={props.cardTitle[1]} paragraph={props.cardParagraph[1]} image={props.cardimage[1]} alt={props.cardAlt[1]} /></SwiperSlide>
                 <SwiperSlide><Card title={props.cardTitle[2]} paragraph={props.cardParagraph[2]} image={props.cardimage[2]} alt={props.cardAlt[2]} /></SwiperSlide>
             </Swiper>
-        </div>
+        </section>
     );
 }

@@ -46,6 +46,10 @@
   --fontWeightFooterParagraph: 400;
 }
 
+body.activeModal {
+  overflow-y: hidden;
+}
+
 footer {
   align-items: center;
   -moz-column-gap: 32px;
@@ -142,4 +146,49 @@ footer .newsletter .inputAndButton button {
   font-weight: var(--fontWeightFooterButton);
   height: 56px;
   padding: 0px 16px;
+}
+footer .footerModal {
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  bottom: 0px;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  left: 0px;
+  position: fixed;
+  right: 0px;
+  top: 0px;
+  width: 100%;
+  z-index: 500;
+}
+footer .footerModal .footerModalContent {
+  background-color: var(--primaryColour);
+  display: grid;
+  justify-items: center;
+  max-width: 640px;
+  padding: 64px;
+  row-gap: 64px;
+  width: 100%;
+}
+footer .footerModal .footerModalContent h3 {
+  color: white;
+  font-family: var(--fontFamily);
+  font-size: 24px;
+  font-weight: 500;
+}
+footer .footerModal .footerModalContent p {
+  color: white;
+  font-family: var(--fontFamily);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2rem;
+}
+footer .footerModal .footerModalContent button {
+  background-color: white;
+  border: none;
+  font-family: var(--fontFamily);
+  font-size: 16px;
+  font-weight: 500;
+  padding: 16px;
 }/*# sourceMappingURL=Footer.css.map */
