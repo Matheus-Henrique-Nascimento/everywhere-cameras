@@ -4,7 +4,7 @@ import './Footer.css';
 export default function Footer(){
 
     const [footerModal, setFooterModal] = useState(false);
-    const toggleModal = () => {
+    const toggleFooterModal = () => {
         setFooterModal(!footerModal);
     };
     if(footerModal){
@@ -20,16 +20,16 @@ export default function Footer(){
                 <h2>Deseja receber nossas novidades?</h2>
                 <section className='inputAndButton'>
                     <input type='text' placeholder='Digite seu e-mail aqui...'/>
-                    <button onClick={toggleModal}>Enviar</button>
+                    <button onClick={toggleFooterModal}>Enviar</button>
                 </section>
             </section>
             <p>Everywhere Cameras | Todos os diretos reservados.</p>
             {footerModal && (
-                <section className='footerModal' onClick={toggleModal}>
+                <section className='footerModal' onClick={toggleFooterModal}>
                     <section className='footerModalContent'>
                         <h3>Erro!</h3>
                         <p>Não haverá a implmentação de uma NewsLetter nesse projeto. A ideia é puramente estética.</p>
-                        <button onClick={toggleModal}>Fechar</button>
+                        <button onClick={toggleFooterModal}>Fechar</button>
                     </section>
                 </section>
             )}
