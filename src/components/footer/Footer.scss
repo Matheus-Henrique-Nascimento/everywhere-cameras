@@ -47,6 +47,7 @@ footer{
             button{
                 @include noSelection;
                 background-color: var(--thirdColour);
+                border: none;
                 color: var(--secondaryColour);
                 cursor: pointer;
                 font-family: var(--fontFamily);
@@ -54,6 +55,10 @@ footer{
                 font-weight: var(--fontWeightFooterButton);
                 height: 56px;
                 padding: 0px 16px;
+                transition: all ease-in-out 0.15s;
+                &:hover{
+                    background-color: var(--detailingColor);
+                }
             }
         }
     }
@@ -79,26 +84,32 @@ footer{
             row-gap: 64px;
             width: 100%;
             h3{
-                color: white;
+                color: var(--secondaryColour);
                 font-family: var(--fontFamily);
-                font-size: 24px;
-                font-weight: 500;
+                font-size: var(--fontSizeFooterModalTitle);
+                font-weight: var(--fontWeightFooterModalTitle);
             }
             p{
-                color: white;
+                color: var(--secondaryColour);
                 font-family: var(--fontFamily);
-                font-size: 16px;
+                font-size: var(--fontSizeFooterModalParagraph);
                 font-style: normal;
-                font-weight: 400;
-                line-height: 2rem;
+                font-weight: var(--fontWeightFooterModalParagraph);
+                line-height: var(--lineHeightModalParagraph);
             }
             button{
-                background-color: white;
+                background-color: var(--thirdColour);
                 border: none;
+                color: var(--secondaryColour);
+                cursor: pointer;
                 font-family: var(--fontFamily);
                 font-size: 16px;
                 font-weight: 500;
                 padding: 16px;
+                transition: all ease-in-out 0.15s;
+                &:hover{
+                    background-color: var(--detailingColor);
+                }
             }
         }
     }

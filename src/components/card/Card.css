@@ -39,12 +39,17 @@
   /* --- Footer --- */
   --fontSizeFooterButton: 12px;
   --fontSizeFooterInput: 12px;
-  --fontSizeFooterTitle: 24px;
+  --fontSizeFooterModalParagraph: 16px;
+  --fontSizeFooterModalTitle: 24px;
   --fontSizeFooterParagraph: 12px;
+  --fontSizeFooterTitle: 24px;
   --fontWeightFooterButton: 400;
   --fontWeightFooterInput: 400;
-  --fontWeightFooterTitle: 500;
+  --fontWeightFooterModalParagraph: 400;
+  --fontWeightFooterModalTitle: 500;
   --fontWeightFooterParagraph: 400;
+  --fontWeightFooterTitle: 500;
+  --lineHeightModalParagraph: 2rem;
 }
 
 .card {
@@ -109,49 +114,4 @@
 .card button:hover {
   color: var(--primaryColour);
   border-bottom: solid var(--primaryColour) 2px;
-}
-.card .cardModal {
-  position: absolute;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.5);
-  bottom: 0px;
-  display: flex;
-  height: 100%;
-  justify-content: center;
-  left: 0px;
-  right: 0px;
-  top: 0px;
-  width: 100%;
-  z-index: 3000;
-}
-.card .cardModal .cardModalContent {
-  background-color: var(--primaryColour);
-  display: grid;
-  justify-items: center;
-  max-width: 640px;
-  padding: 64px;
-  row-gap: 64px;
-  width: 100%;
-}
-.card .cardModal .cardModalContent h3 {
-  color: white;
-  font-family: var(--fontFamily);
-  font-size: 24px;
-  font-weight: 500;
-}
-.card .cardModal .cardModalContent p {
-  color: white;
-  font-family: var(--fontFamily);
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 2rem;
-}
-.card .cardModal .cardModalContent button {
-  background-color: white;
-  border: none;
-  font-family: var(--fontFamily);
-  font-size: 16px;
-  font-weight: 500;
-  padding: 16px;
 }/*# sourceMappingURL=Card.css.map */

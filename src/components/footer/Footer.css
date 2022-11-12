@@ -39,12 +39,17 @@
   /* --- Footer --- */
   --fontSizeFooterButton: 12px;
   --fontSizeFooterInput: 12px;
-  --fontSizeFooterTitle: 24px;
+  --fontSizeFooterModalParagraph: 16px;
+  --fontSizeFooterModalTitle: 24px;
   --fontSizeFooterParagraph: 12px;
+  --fontSizeFooterTitle: 24px;
   --fontWeightFooterButton: 400;
   --fontWeightFooterInput: 400;
-  --fontWeightFooterTitle: 500;
+  --fontWeightFooterModalParagraph: 400;
+  --fontWeightFooterModalTitle: 500;
   --fontWeightFooterParagraph: 400;
+  --fontWeightFooterTitle: 500;
+  --lineHeightModalParagraph: 2rem;
 }
 
 body.activeModal {
@@ -140,6 +145,7 @@ footer .newsletter .inputAndButton button {
   -ms-user-select: none;
   user-select: none;
   background-color: var(--thirdColour);
+  border: none;
   color: var(--secondaryColour);
   cursor: pointer;
   font-family: var(--fontFamily);
@@ -147,6 +153,10 @@ footer .newsletter .inputAndButton button {
   font-weight: var(--fontWeightFooterButton);
   height: 56px;
   padding: 0px 16px;
+  transition: all ease-in-out 0.15s;
+}
+footer .newsletter .inputAndButton button:hover {
+  background-color: var(--detailingColor);
 }
 footer .footerModal {
   align-items: center;
@@ -172,24 +182,30 @@ footer .footerModal .footerModalContent {
   width: 100%;
 }
 footer .footerModal .footerModalContent h3 {
-  color: white;
+  color: var(--secondaryColour);
   font-family: var(--fontFamily);
-  font-size: 24px;
-  font-weight: 500;
+  font-size: var(--fontSizeFooterModalTitle);
+  font-weight: var(--fontWeightFooterModalTitle);
 }
 footer .footerModal .footerModalContent p {
-  color: white;
+  color: var(--secondaryColour);
   font-family: var(--fontFamily);
-  font-size: 16px;
+  font-size: var(--fontSizeFooterModalParagraph);
   font-style: normal;
-  font-weight: 400;
-  line-height: 2rem;
+  font-weight: var(--fontWeightFooterModalParagraph);
+  line-height: var(--lineHeightModalParagraph);
 }
 footer .footerModal .footerModalContent button {
-  background-color: white;
+  background-color: var(--thirdColour);
   border: none;
+  color: var(--secondaryColour);
+  cursor: pointer;
   font-family: var(--fontFamily);
   font-size: 16px;
   font-weight: 500;
   padding: 16px;
+  transition: all ease-in-out 0.15s;
+}
+footer .footerModal .footerModalContent button:hover {
+  background-color: var(--detailingColor);
 }/*# sourceMappingURL=Footer.css.map */

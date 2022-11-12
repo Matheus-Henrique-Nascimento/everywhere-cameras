@@ -39,12 +39,17 @@
   /* --- Footer --- */
   --fontSizeFooterButton: 12px;
   --fontSizeFooterInput: 12px;
-  --fontSizeFooterTitle: 24px;
+  --fontSizeFooterModalParagraph: 16px;
+  --fontSizeFooterModalTitle: 24px;
   --fontSizeFooterParagraph: 12px;
+  --fontSizeFooterTitle: 24px;
   --fontWeightFooterButton: 400;
   --fontWeightFooterInput: 400;
-  --fontWeightFooterTitle: 500;
+  --fontWeightFooterModalParagraph: 400;
+  --fontWeightFooterModalTitle: 500;
   --fontWeightFooterParagraph: 400;
+  --fontWeightFooterTitle: 500;
+  --lineHeightModalParagraph: 2rem;
 }
 
 main .videoSection video {
